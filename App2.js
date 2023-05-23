@@ -19,20 +19,20 @@ function calcularDesconto() {
     const QtdHr = document.getElementById('QtdHr').value;
     if(SalarioHr !== '' & QtdHr !== ''){
     
-    const bruto = QtdHr * SalarioHr
-    const renda = bruto * 0.11;
-    const Inss = bruto *0.08;
-    const Sindicato = bruto * 0.05;
-    const Liquido = bruto - renda- Inss- Sindicato;
+        const bruto = QtdHr * SalarioHr
+        const renda = bruto * 0.11;
+        const Inss = bruto *0.08;
+        const Sindicato = bruto * 0.05;
+        const Liquido = bruto - renda- Inss- Sindicato;
 
-    SalarioBruto.value = bruto.toFixed(2)
-    IR.value = renda.toFixed(2)
-    InSS.value = Inss.toFixed(2)
-    Sindicat.value = Sindicato.toFixed(2)
-    SalarioLiquido.value = Liquido.toFixed(2)
+        SalarioBruto.value = bruto.toFixed(2)
+        IR.value = renda.toFixed(2)
+        InSS.value = Inss.toFixed(2)
+        Sindicat.value = Sindicato.toFixed(2)
+        SalarioLiquido.value = Liquido.toFixed(2)
     }
     else{
-        alert("Preencha com o valor do seu salário bruto!")
+        alert("Preencha corretamente o valor do seu salário por hora, e a quantidade de horas trabalhadas!!")
     }
 };
 
